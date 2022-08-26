@@ -1,0 +1,22 @@
+In this database I created two tables, one about the gamers personal information, and one about the game they play professionally.
+
+CREATE TABLE ProGamers (id INTEGER PRIMARY KEY, name TEXT, gamertag TEXT, age INTEGER); 
+INSERT INTO ProGamers VALUES (1, "Ian Porter", "Crimsix", 29);
+INSERT INTO ProGamers VALUES (2, "Seth Abner", "Scump", 27);
+INSERT INTO ProGamers VALUES (3, "Matthew Piper", "Formal", 27);
+INSERT INTO ProGamers VALUES (4, "Justin Morales", "jstn", 20);
+INSERT INTO ProGamers VALUES (5, "Massimo Franceschi", "Atomic", 18);
+
+CREATE TABLE Game (id INTEGER PRIMARY KEY, person_id INTEGER, game TEXT);
+INSERT INTO Game VALUES (1, 1, "Call of Duty");
+INSERT INTO Game VALUES (2, 2, "Call of Duty");
+INSERT INTO Game VALUES (3, 3, "Halo");
+INSERT INTO Game VALUES (4, 4, "Rocket League");
+INSERT INTO Game VALUES (5, 5, "Rocket League");
+
+I used the JOIN operator to create a table displaying the players fullname, gamertag, and what game they play in an easy to read format.
+
+SELECT ProGamers.name, ProGamers.gamertag, Game.game
+FROM ProGamers
+JOIN Game
+ON ProGamers.id = Game.person_id; 
