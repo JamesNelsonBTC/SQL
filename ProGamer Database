@@ -6,6 +6,9 @@ INSERT INTO ProGamers VALUES (2, "Seth Abner", "Scump", 27);
 INSERT INTO ProGamers VALUES (3, "Matthew Piper", "Formal", 27);
 INSERT INTO ProGamers VALUES (4, "Justin Morales", "jstn", 20);
 INSERT INTO ProGamers VALUES (5, "Massimo Franceschi", "Atomic", 18);
+INSERT INTO ProGamers VALUES (6, "Jacob Knapman", "JKnaps", 22);
+INSERT INTO ProGamers VALUES (7, "Axel Touret", "Vatira", 16);
+INSERT INTO ProGamers VALUES (8, "Tommy Wilson", "Lucid", 22);
 
 CREATE TABLE Game (id INTEGER PRIMARY KEY, person_id INTEGER, game TEXT);
 INSERT INTO Game VALUES (1, 1, "Call of Duty");
@@ -13,6 +16,9 @@ INSERT INTO Game VALUES (2, 2, "Call of Duty");
 INSERT INTO Game VALUES (3, 3, "Halo");
 INSERT INTO Game VALUES (4, 4, "Rocket League");
 INSERT INTO Game VALUES (5, 5, "Rocket League");
+INSERT INTO Game VALUES (6, 6, "Rocket League");
+INSERT INTO Game VALUES (7, 7, "Rocket League");
+INSERT INTO Game VALUES (8, 8, "Halo");
 
 I used the JOIN operator to create a table displaying the players fullname, gamertag, and what game they play in an easy to read format.
 
